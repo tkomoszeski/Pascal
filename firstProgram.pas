@@ -105,8 +105,16 @@ while i >0 do
         end;
 end;
 
+
+function functionWithoutParameters: integer;
+var i: integer;
+begin
+writeln('Hello from function without parameters');
+end;
+
 (*Mian program *)
 begin
+functionWithoutParameters;
 forLoop();
 whileLoop();
 writeInteger(getInteger());
